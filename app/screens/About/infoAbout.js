@@ -9,7 +9,7 @@ import {
   Linking
 } from "react-native";
 import { Icon, Grid, Row, Avatar } from "react-native-elements";
-import Expo from "expo";
+import Expo from "expo-constants";
 
 import { Logo } from "../../components/About/Logo";
 
@@ -54,7 +54,7 @@ const Info = () => {
                 onPress={() =>
                   Linking.openURL(
                     "mailto:beyondspprt@gmail.com?subject=Fallo Hive&body=Version de Hive ~" +
-                      Expo.Constants.manifest.version +
+                      Expo.manifest.version +
                       "~"
                   )}
               />
@@ -83,7 +83,7 @@ const Info = () => {
                 marginBottom: 10
               }}
             >
-              Hive v{Expo.Constants.manifest.version}🐝
+              Hive v{Expo.manifest.version}🐝
             </Text>
           </View>
         </View>

@@ -7,6 +7,7 @@ import {
   StyleSheet,
   RefreshControl,
   Platform,
+  SafeAreaView,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -177,7 +178,9 @@ class CursosDisponibles extends Component {
     }
 
     return (
-      <View style={{ flex: 1, backgroundColor: '#E7E9E7' }}>
+
+
+      <View style={{ flex: 1 }}>
         <StatusBar translucent={false} backgroundColor="#B64233" barStyle="light-content" />
         <View style={{ flex: 1 }}>
           <View style={styles.PickerTab}>

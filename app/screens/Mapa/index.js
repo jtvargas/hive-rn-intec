@@ -1,9 +1,9 @@
-import React from "react";
-import { View, Text, Image, Dimensions, Platform } from "react-native";
-import ImageZoom from "react-native-image-pan-zoom";
+import React from 'react';
+import { View, Text, Image, Dimensions, Platform } from 'react-native';
+import ImageZoom from 'react-native-image-pan-zoom';
 import { WebView } from 'react-native-webview';
 
-const imageWidth = Dimensions.get("window").width;
+const imageWidth = Dimensions.get('window').width;
 
 
 import { AdMobBanner } from 'expo';
@@ -23,7 +23,7 @@ const Mapa = () => (
   //       alignItems: "center"
   //     }}
   //   >
-      
+
   //     <ImageZoom
   //       style={{ flex: 1, width: imageWidth, height: imageWidth * 0.565 }}
   //       cropWidth={imageWidth}
@@ -47,14 +47,14 @@ const Mapa = () => (
   //     didFailToReceiveAdWithError={this.bannerError}
   //   />
   // </View>
-  <View style={{ flex: 1,}}>
+  <View style={{ flex: 1 }}>
     <WebView
       source={{ uri: 'https://www.google.com/maps/d/viewer?mid=1rRRMjOxQLt-ZsNLSTLCw7SvBo-M&ll=18.487895208256898%2C-69.96265285532951&z=18' }}
-      javaScriptEnabled={true}
-      domStorageEnabled={true}
-      startInLoadingState={true}
-      maxHeight={480}
-      maxWidth={640}
+      javaScriptEnabled
+      domStorageEnabled
+      startInLoadingState
+      maxHeight={'100%'}
+      maxWidth={'100%'}
       scrollEnabled={false}
     />
 

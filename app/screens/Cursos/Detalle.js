@@ -10,6 +10,7 @@ import { getRoomInfo } from "../../actions/cursos";
 import TabViewComponent from "../../components/Detalles/tabViewComponent";
 
 import { AdMobBanner } from "expo";
+import SafeAreaView from '../../components/SafeArea';
 
 const BANNER_ID_ANDROID = "ca-app-pub-8661249338970669/9894738025";
 const BANNER_ID_IOS = "ca-app-pub-8661249338970669/3161098270";
@@ -56,10 +57,10 @@ class Detalle extends PureComponent {
             <TabViewComponent detalles={classData} />
           )}
         </View>
-        <AdMobBanner
+        {/* <AdMobBanner
           adUnitID={Platform.OS === "ios" ? BANNER_ID_IOS : BANNER_ID_ANDROID}
           didFailToReceiveAdWithError={this.bannerError}
-        />
+        /> */}
       </View>
     );
   }
